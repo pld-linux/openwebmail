@@ -1,0 +1,12 @@
+diff -Nur old/cgi-bin/openwebmail/auth_unix.pl new/cgi-bin/openwebmail/auth_unix.pl
+--- old/cgi-bin/openwebmail/auth_unix.pl	Thu Apr 24 04:41:48 2003
++++ new/cgi-bin/openwebmail/auth_unix.pl	Tue Sep 30 11:50:06 2003
+@@ -38,7 +38,7 @@
+ #
+ 
+ my $unix_passwdfile_plaintext="/etc/passwd";
+-my $unix_passwdfile_encrypted="/etc/master.passwd";
++my $unix_passwdfile_encrypted="/etc/shadow";
+ my $unix_passwdmkdb="/usr/sbin/pwd_mkdb";
+ my $check_shell=0;
+ 
