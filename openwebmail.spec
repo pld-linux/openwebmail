@@ -15,6 +15,7 @@ Requires:	perl-MIME-Base64
 Requires:	perl-libnet
 Requires:	perl-Text-Iconv
 Requires:	sperl >= 5.8
+Requires:	ispell
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_httpdir	/home/services/httpd
