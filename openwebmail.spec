@@ -5,8 +5,8 @@ Version:	2.01
 Release:	0.1
 License:	GPL
 Group:		Applications/Mail
-Source0:	http://openwebmail.org/openwebmail/download/%{name}-%{version}.tgz
-URL:		http://openwebmail.org/
+Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
+URL:		http://openwebmail.com/
 Requires:	perl >= 5.8
 Requires:	icnov
 Requires:	perl-CGI
