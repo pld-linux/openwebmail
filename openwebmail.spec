@@ -1,17 +1,24 @@
 Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
-Version:	1.90
+Version:	2.01
 Release:	0.1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.org/openwebmail/download/%{name}-%{version}.tgz
 URL:		http://openwebmail.org/
+Requires:	perl >= 5.8
+Requires:	icnov
+Requires:	perl-CGI
+Requires:	perl-MIME-Base64
+Requires:	perl-libnet
+Requires:	perl-Text-Iconv
+Requires:	sperl >= 5.8
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		httpdir		/home/services/httpd
-%define		htmldir		%{httpdir}/html
-%define		cgidir		%{httpdir}/cgi-bin
+%define		_httpdir	/home/services/httpd
+%define		_htmldir	%{_httpdir}/html
+%define		_cgidir		%{_httpdir}/cgi-bin
 
 %description
 Open WebMail is a webmail system designed to manage very large mail
@@ -37,15 +44,16 @@ pisowni, automatyczne odpowiadanie, filtrowanie poczty, obs³ugê POP3
 oraz podgl±danie liczby wiadomo¶ci.
 
 %prep
-%setup -q
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#tar -zxvBpf %{SOURCE0} --directory=%{httpdir}
-#cp -rf $RPM_SOURCE_DIR/auth_unix.pl %{cgidir}/openwebmail/auth_unix.pl
-#cp -rf $RPM_SOURCE_DIR/openwebmail.conf %{cgidir}/openwebmail%{_sysconfdir}/openwebmail.conf
-#ln -sf %{httpdir}/data %{htmldir}/data
-#ln -sf %{cgidir}/openwebmail/vacation.pl %{_sysconfdir}/smrsh/vacation.pl
+
+install -d $RPM_BUILD_ROOT{%{_cgidir},%{_htmldir},%{_sysconfdir}/smrsh}
+
+cp -a cgi-bin/%{name} $RPM_BUILD_ROOT%{_cgidir}
+cp -a data/%{name} $RPM_BUILD_ROOT%{_htmldir}
+ln -sf %{_cgidir}/openwebmail/vacation.pl $RPM_BUILD_ROOT%{_sysconfdir}/smrsh/vacation.pl
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,8 +66,6 @@ echo
 
 %files
 %defattr(644,root,root,755)
-%{cgidir}/openwebmail
-# NOTE: %{httpdir}/data dir doesn't exist
-%{httpdir}/data/openwebmail
-%{htmldir}/data
+%{_cgidir}/%{name}/*
+%{_httpdir}/html/%{name}/*
 %{_sysconfdir}/smrsh/vacation.pl
