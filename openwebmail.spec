@@ -1,3 +1,9 @@
+#
+# Conditional build:
+# _with_ispell - toggle ispell support
+# _with_quota  - toggle quota support
+# (it's only needed for automagical depenednces)
+#
 Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
@@ -15,7 +21,8 @@ Requires:	perl-MIME-Base64
 Requires:	perl-libnet
 Requires:	perl-Text-Iconv
 Requires:	sperl >= 5.8
-Requires:	ispell
+%{?_with_ispell:Requires:	ispell}
+%{?_with_quota:Requires:	quota}
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_httpdir	/home/services/httpd
