@@ -12,6 +12,7 @@ Release:	0.2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
+# Source0-md5:	582260b6132c156267e7589e56520e63
 Patch0:		%{name}-conf-PLD.patch
 URL:		http://openwebmail.com/
 Requires:	perl-modules >= 5.8
