@@ -24,7 +24,7 @@ Requires:	perl-Text-Iconv
 Requires:	sperl >= 5.8
 %{?_with_ispell:Requires:	ispell}
 %{?_with_quota:Requires:	quota}
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_httpdir	/home/services/httpd
 %define		_htmldir	%{_httpdir}/html
