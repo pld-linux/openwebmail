@@ -1,0 +1,18 @@
+--- openwebmail-2.01/cgi-bin/openwebmail/etc/openwebmail.conf.orig	Sat Apr 26 12:25:37 2003
++++ openwebmail-2.01/cgi-bin/openwebmail/etc/openwebmail.conf	Sat Apr 26 12:25:39 2003
+@@ -14,12 +14,12 @@
+ dbm_ext			.db
+ dbmopen_ext		none
+ dbmopen_haslock		no
+-ow_cgidir		/usr/local/www/cgi-bin/openwebmail
++ow_cgidir		/home/services/httpd/cgi-bin/openwebmail
+ ow_cgiurl		/cgi-bin/openwebmail
+-ow_htmldir		/usr/local/www/data/openwebmail
++ow_htmldir		/home/services/httpd/html/openwebmail
+ ow_htmlurl		/openwebmail
+ logfile			/var/log/openwebmail.log
+-spellcheck		/usr/local/bin/ispell
++spellcheck		/usr/bin/ispell
+ 
+ <default_signature>
+ -- 
