@@ -8,7 +8,7 @@ Group:		Applications/Mail
 Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
 Patch0:		%{name}-conf-PLD.patch
 URL:		http://openwebmail.com/
-Requires:	perl >= 5.8
+Requires:	perl-modules >= 5.8
 Requires:	iconv
 Requires:	perl-CGI
 Requires:	perl-MIME-Base64
