@@ -1,12 +1,12 @@
-diff -Nur old/cgi-bin/openwebmail/auth_unix.pl new/cgi-bin/openwebmail/auth_unix.pl
---- old/cgi-bin/openwebmail/auth_unix.pl	Thu Apr 24 04:41:48 2003
-+++ new/cgi-bin/openwebmail/auth_unix.pl	Tue Sep 30 11:50:06 2003
-@@ -38,7 +38,7 @@
- #
+diff -urN openwebmail_org/cgi-bin/openwebmail/auth/auth_unix.pl openwebmail_mod/cgi-bin/openwebmail/auth/auth_unix.pl
+--- openwebmail_org/cgi-bin/openwebmail/auth/auth_unix.pl	2003-12-07 03:23:20.000000000 +0100
++++ openwebmail_mod/cgi-bin/openwebmail/auth/auth_unix.pl	2004-02-19 12:46:45.000000000 +0100
+@@ -21,7 +21,7 @@
+ }
  
- my $unix_passwdfile_plaintext="/etc/passwd";
--my $unix_passwdfile_encrypted="/etc/master.passwd";
-+my $unix_passwdfile_encrypted="/etc/shadow";
- my $unix_passwdmkdb="/usr/sbin/pwd_mkdb";
- my $check_shell=0;
+ my $passwdfile_plaintext = $conf{'passwdfile_plaintext'} || '/etc/passwd';
+-my $passwdfile_encrypted = $conf{'passwdfile_encrypted'} || '/etc/master.passwd';
++my $passwdfile_encrypted = $conf{'passwdfile_encrypted'} || '/etc/shadow';
+ my $passwdmkdb = $conf{'passwdmkdb'} || '/usr/sbin/pwd_mkdb';
  
+ my $check_nologin = $conf{'check_nologin'} || 'no';
