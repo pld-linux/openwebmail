@@ -6,6 +6,7 @@ Release:	0.2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
+Patch0:		%{name}-conf-PLD.patch
 URL:		http://openwebmail.com/
 Requires:	perl >= 5.8
 Requires:	iconv
@@ -45,6 +46,7 @@ oraz podgl±danie liczby wiadomo¶ci.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
