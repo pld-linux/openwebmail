@@ -8,12 +8,13 @@ Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
 Version:	2.01
-Release:	0.2
+Release:	0.3
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
 # Source0-md5:	582260b6132c156267e7589e56520e63
 Patch0:		%{name}-conf-PLD.patch
+Patch1:		%{name}-auth.patch
 URL:		http://openwebmail.com/
 Requires:	perl-modules >= 5.8
 Requires:	iconv
@@ -56,6 +57,7 @@ oraz podgl±danie liczby wiadomo¶ci.
 %prep
 %setup -q -c
 %patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
