@@ -7,15 +7,15 @@
 Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
-Version:	2.32
+Version:	2.41
 Release:	1
 License:	GPL
 Group:		Applications/Mail
-Source0:	http://openwebmail.com/openwebmail/download/%{name}-%{version}.tgz
-# Source0-md5:	76eb967e492c81a0db56a053d221e5d4
+Source0:	http://openwebmail.org/openwebmail/download/release/%{name}-%{version}.tar.gz
+# Source0-md5:	f3df360acfeb693d648b38c55656f03f
 Patch0:		%{name}-conf-PLD.patch
 Patch1:		%{name}-auth.patch
-URL:		http://openwebmail.com/
+URL:		http://openwebmail.org/
 Requires:	perl-modules >= 5.8
 Requires:	iconv
 Requires:	perl-CGI
