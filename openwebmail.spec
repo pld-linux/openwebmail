@@ -61,7 +61,6 @@ oraz podgl±danie liczby wiadomo¶ci.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_cgidir},%{_htmldir},%{_sysconfdir}/smrsh}
 
 cp -a cgi-bin/%{name} $RPM_BUILD_ROOT%{_cgidir}
@@ -79,6 +78,6 @@ echo
 
 %files
 %defattr(644,root,root,755)
-%{_cgidir}/%{name}/*
-%{_httpdir}/html/%{name}/*
+%{_cgidir}/%{name}
+%{_httpdir}/html/%{name}
 %{_sysconfdir}/smrsh/vacation.pl
