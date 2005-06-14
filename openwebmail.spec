@@ -7,12 +7,12 @@
 Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
-Version:	2.50
+Version:	2.51
 Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.org/openwebmail/download/release/%{name}-%{version}.tar.gz
-# Source0-md5:	889bddb68ad2ba81ee1d00ecaf2ba2e2
+# Source0-md5:	78928f259ed8cc0bd3d4414021430101
 Patch0:		%{name}-conf-PLD.patch
 Patch1:		%{name}-auth.patch
 URL:		http://openwebmail.org/
