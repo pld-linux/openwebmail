@@ -12,7 +12,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://openwebmail.org/openwebmail/download/release/%{name}-%{version}.tar.gz
-# Source0-md5:	78928f259ed8cc0bd3d4414021430101
+# Source0-md5:	2d9897680dc5e607b2a1c06ca87d67f4
 Patch0:		%{name}-conf-PLD.patch
 Patch1:		%{name}-auth.patch
 URL:		http://openwebmail.org/
