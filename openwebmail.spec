@@ -7,7 +7,7 @@
 Summary:	Open Webmail
 Summary(pl):	Otwarta poczta przez przegl±darkê
 Name:		openwebmail
-Version:	2.51
+Version:	2.52
 Release:	1
 License:	GPL
 Group:		Applications/Mail
