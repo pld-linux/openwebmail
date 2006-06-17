@@ -16,7 +16,7 @@ Name:		openwebmail
 Version:	2.52
 Release:	1
 License:	GPL
-Group:		Applications/Mail
+Group:		Applications/WWW
 Source0:	http://openwebmail.org/openwebmail/download/release/%{name}-%{version}.tar.gz
 # Source0-md5:	2d9897680dc5e607b2a1c06ca87d67f4
 Patch0:		%{name}-conf-PLD.patch
