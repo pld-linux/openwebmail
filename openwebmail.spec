@@ -1,4 +1,10 @@
 #
+# TODO:
+# - move from /home/services to /usr/share (upgrade-trigger)
+# - main package should be non-suid, it can work as regular imap client
+# - prepare second, suid subpackage
+# - update to webapps framework
+#
 # Conditional build:
 # _with_ispell - toggle ispell support
 # _with_quota  - toggle quota support
