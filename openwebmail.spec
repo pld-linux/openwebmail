@@ -11,7 +11,7 @@
 # (it's only needed for automagical depenednces)
 #
 Summary:	Open Webmail
-Summary(pl):	Otwarta poczta przez przegl±darkê
+Summary(pl.UTF-8):   Otwarta poczta przez przeglÄ…darkÄ™
 Name:		openwebmail
 Version:	2.52
 Release:	1
@@ -48,17 +48,17 @@ folder/message operations, draft folder, confirmed reading support,
 full content search, a spelling checker, auto reply, mail filtering,
 POP3 support, and message count previewing.
 
-%description -l pl
-Open WebMail to system poczty przez WWW zaprojektowany do zarz±dzania
-bardzo du¿ymi plikami folderów pocztowych w sposób wydajny pamiêciowo.
-Ma tak¿e w³asno¶ci pomagaj±ce u¿ytkownikom g³adko przej¶æ z Microsoft
-Outlooka na Open WebMail. Open WebMail ma nastêpuj±ce mo¿liwo¶ci:
-wiele jêzyków, wiele zestawów ikon i styli, silne wsparcie dla MIME,
-wirtualne aliasy host/login, obs³ugê PAM, zmianê has³a online, wygodne
-operacje na folderach i wiadomo¶ciach, folder szkiców, obs³ugê
-potwierdzenia przeczytania, pe³notekstowe przeszukiwanie, kontrolê
-pisowni, automatyczne odpowiadanie, filtrowanie poczty, obs³ugê POP3
-oraz podgl±danie liczby wiadomo¶ci.
+%description -l pl.UTF-8
+Open WebMail to system poczty przez WWW zaprojektowany do zarzÄ…dzania
+bardzo duÅ¼ymi plikami folderÃ³w pocztowych w sposÃ³b wydajny pamiÄ™ciowo.
+Ma takÅ¼e wÅ‚asnoÅ›ci pomagajÄ…ce uÅ¼ytkownikom gÅ‚adko przejÅ›Ä‡ z Microsoft
+Outlooka na Open WebMail. Open WebMail ma nastÄ™pujÄ…ce moÅ¼liwoÅ›ci:
+wiele jÄ™zykÃ³w, wiele zestawÃ³w ikon i styli, silne wsparcie dla MIME,
+wirtualne aliasy host/login, obsÅ‚ugÄ™ PAM, zmianÄ™ hasÅ‚a online, wygodne
+operacje na folderach i wiadomoÅ›ciach, folder szkicÃ³w, obsÅ‚ugÄ™
+potwierdzenia przeczytania, peÅ‚notekstowe przeszukiwanie, kontrolÄ™
+pisowni, automatyczne odpowiadanie, filtrowanie poczty, obsÅ‚ugÄ™ POP3
+oraz podglÄ…danie liczby wiadomoÅ›ci.
 
 %prep
 %setup -q -c
