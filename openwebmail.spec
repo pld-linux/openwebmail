@@ -11,7 +11,7 @@
 # (it's only needed for automagical depenednces)
 #
 Summary:	Open Webmail
-Summary(pl.UTF-8):   Otwarta poczta przez przeglądarkę
+Summary(pl.UTF-8):	Otwarta poczta przez przeglądarkę
 Name:		openwebmail
 Version:	2.52
 Release:	1
