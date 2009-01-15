@@ -13,12 +13,12 @@
 Summary:	Open Webmail
 Summary(pl.UTF-8):	Otwarta poczta przez przeglądarkę
 Name:		openwebmail
-Version:	2.52
+Version:	2.53
 Release:	1
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://openwebmail.org/openwebmail/download/release/%{name}-%{version}.tar.gz
-# Source0-md5:	2d9897680dc5e607b2a1c06ca87d67f4
+# Source0-md5:	a7b6c55c5a9a437d003fbb6c74b0c468
 Patch0:		%{name}-conf-PLD.patch
 Patch1:		%{name}-auth.patch
 URL:		http://openwebmail.org/
